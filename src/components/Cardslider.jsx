@@ -14,7 +14,7 @@ const data = [
 ];
 const Cardslider = () => {
   const slidercard = data.map((data) => (
-    <div className="ma x-w-[42 2px] bg-white px-[23px] pt-[18px] pb-[53px] hover:shadow-[6px_13px_38px_0px_rgba(0,0,0,0.12)] duration-500 transition-all">
+    <div className="ma x-w-[42 2px] bg-white px-[23px] pt-[18px] pb-[53px] hover:shadow-[6px_13px_38px_0px_#0000001f] duration-500 transition-all">
       <img src={data.img} alt="sofa" className="mb-[19px] w-full" />
       <div className="flex justify-between items-center mb-4 lg:justify-start">
         <p className=" font-poppins md:text-xl text-lg text-center font-medium leading-normal">
@@ -135,11 +135,11 @@ const Cardslider = () => {
       >
         <span>
           <svg
+            xmlns="http://www.w3.org/2000/svg"
             width="42"
             height="16"
             viewBox="0 0 42 16"
             fill="none"
-            xmlns="http://www.w3.org/2000/svg"
           >
             <path
               d="M0.292892 8.70711C-0.0976295 8.31658 -0.0976295 7.68342 0.292892 7.29289L6.65685 0.928932C7.04738 0.538408 7.68054 0.538408 8.07107 0.928932C8.46159 1.31946 8.46159 1.95262 8.07107 2.34315L2.41422 8L8.07107 13.6569C8.46159 14.0474 8.46159 14.6805 8.07107 15.0711C7.68054 15.4616 7.04738 15.4616 6.65685 15.0711L0.292892 8.70711ZM42 9H1V7H42V9Z"
@@ -170,10 +170,11 @@ const Cardslider = () => {
       </button>
       <div
         className="max-w-[1320px] mx-auto px-3"
-        data-aos="zoom-out-right"
-        data-aos-duration="3000"
-      
-        >
+        data-ao
+        s="zoom-out-right"
+        data-aos-du
+        ration="3000"
+      >
         <div className="flex items-center gap-[9px] mb-[19px] justify-center lg:justify-start">
           <div className="max-w-[95px] w-full border border-black border-soid"></div>
           <p className=" font-poppins md:text-xl text-lg text-center leading-normal font-normal text-[#BD7D41] text-nowrap">

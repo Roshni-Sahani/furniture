@@ -11,7 +11,7 @@ const Section7 = () => {
           data-aos-duration="3000"
         >
           <div className="bg-[url(./assests/images/bg1.webp)] bg-size bg-center bg-no-repeat lg:pl-[107px] pt-8 pb-[71px] pl-8">
-            <p className="font-poppins text-xl leading-normal font-normal  md:after:w-[95px] after:h-[2px] after:bg-black after:absolute relative after:left-[-100px] lg:after:left-[-20%] after:top-[14px] mb-5">
+            <p className="font-poppins text-xl leading-normal font-normal  lg:after:w-[95px] after:h-[2px] after:bg-black after:absolute relative after:left-[-100px] lg:after:left-[-20%] after:top-[14px] mb-5">
               Festival Offer
             </p>
             <p className="text-[35px] font-poppins font-bold text-[#BD7D41] leading-normal mb-[15px]">
@@ -29,7 +29,7 @@ const Section7 = () => {
           data-aos-duration="3000"
         >
           <div className="bg-[url(./assests/images/bg2.webp)] bg-size bg-center bg-no-repeat lg:pl-[107px] pt-8 pb-[71px] pl-8">
-            <p className="font-poppins text-xl leading-normal font-normal  md:after:w-[95px] after:h-[2px] after:bg-black after:absolute relative after:left-[-100px] lg:after:left-[-20%] after:top-[14px] mb-5">
+            <p className="font-poppins text-xl leading-normal font-normal  lg:after:w-[95px] after:h-[2px] after:bg-black after:absolute relative after:left-[-100px] lg:after:left-[-20%] after:top-[14px] mb-5">
               Festival Offer
             </p>
             <p className="text-[35px] font-poppins font-bold text-[#BD7D41] leading-normal mb-[15px]">

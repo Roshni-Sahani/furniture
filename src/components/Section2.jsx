@@ -60,9 +60,6 @@ const Section2 = () => {
             <div className="flex justify-center lg:justify-start">
               <Button text="READ MORE" name="!mt-[34px]" />
             </div>
-            {/* <button className="font-poppins text-white text-xl leading-normal text-center bg-[#BD7D41] py-[19px] px-12 font-semibold justify-content flex">
-              READ MORE
-            </button> */}
           </div>
         </div>
       </div>

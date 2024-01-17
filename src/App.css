@@ -5,3 +5,6 @@
 .stroke:hover{
     -webkit-text-stroke: 0.7px white;
 }
+.color{
+    color: #0000001f;
+}
