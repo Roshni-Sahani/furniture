@@ -32,7 +32,7 @@ const Mynav = () => {
             <li>
               <Link
                 to="/"
-                className="text-white relative after:absolute after:w-0 after:h-[3px] after:hover:left-0  after:bg-[#BD7D41] transition-all after:left-[50%] after:duration-700 hover:after:w-full after:bottom-[-12px] font-roboto text-lg font-bold"
+                className="text-white relative after:absolute after:w-0 after:h-[3px] after:hover:left-0  after:bg-[#BD7D41] transition-all after:left-[50%] after:duration-700 hover:after:w-full after:bottom-[-12px] font-roboto text-lg font-normal stroke"
               >
                 {" "}
                 HOME
@@ -41,18 +41,18 @@ const Mynav = () => {
             <li>
               <Link
                 to="/about"
-                className="text-white relative after:absolute after:w-0 after:h-[3px] after:hover:left-0  after:bg-[#BD7D41] transition-all after:left-[50%] after:duration-700 hover:after:w-full after:bottom-[-12px] font-roboto text-lg font-bold"
+                className="text-white relative after:absolute after:w-0 after:h-[3px] after:hover:left-0  after:bg-[#BD7D41] transition-all after:left-[50%] after:duration-700 hover:after:w-full after:bottom-[-12px] font-roboto text-lg font-bold stroke"
               >
                 ABOUT US
               </Link>
             </li>
-            <li className="text-white  relative after:absolute after:w-0 after:h-[3px] after:hover:left-0  after:bg-[#BD7D41] transition-all after:left-[50%] after:duration-700 hover:after:w-full after:bottom-[-12px] font-roboto text-lg font-bold">
+            <li className="text-white  relative after:absolute after:w-0 after:h-[3px] after:hover:left-0  after:bg-[#BD7D41] transition-all after:left-[50%] after:duration-700 hover:after:w-full after:bottom-[-12px] font-roboto text-lg font-normal stroke">
               SHOP
             </li>
             <li>
               <Link
                 to="/shop"
-                className="text-white  relative after:absolute after:w-0 after:h-[3px] after:hover:left-0  after:bg-[#BD7D41] transition-all after:left-[50%] after:duration-700 hover:after:w-full after:bottom-[-12px] font-roboto text-lg font-bold"
+                className="text-white  relative after:absolute after:w-0 after:h-[3px] after:hover:left-0  after:bg-[#BD7D41] transition-all after:left-[50%] after:duration-700 hover:after:w-full after:bottom-[-12px] font-roboto text-lg font-normal stroke"
               >
                 CONTACT US
               </Link>
