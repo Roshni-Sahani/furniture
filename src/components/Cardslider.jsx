@@ -14,7 +14,7 @@ const data = [
 ];
 const Cardslider = () => {
   const slidercard = data.map((data) => (
-    <div className="ma x-w-[42 2px] bg-white px-[23px] pt-[18px] pb-[53px] hover:shadow-[6px_13px_38px_0px_#0000001f] duration-500 transition-all">
+    <div className="px-[23px] pt-[18px] pb-[53px] hover:shadow-[6px_13px_38px_0px_#0000001f] duration-500 transition-all">
       <img src={data.img} alt="sofa" className="mb-[19px] w-full" />
       <div className="flex justify-between items-center mb-4 lg:justify-start">
         <p className=" font-poppins md:text-xl text-lg text-center font-medium leading-normal">
@@ -118,10 +118,11 @@ const Cardslider = () => {
       },
 
       {
-        breakpoint: 800,
+        breakpoint: 768,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          dots:true,
         },
       },
     ],
@@ -129,44 +130,40 @@ const Cardslider = () => {
   return (
     <div className="lg:pt-[110px] relative lg:pb-[69px] py-10">
       <button
-        className="w-[99px] h-[99px] rounded-full bg-white  absolute 2xl:bottom-[25%] bottom-0  2xl:left-[3%] left-[10%] flex justify-center items-center shadow-[2px_7px_16px_0px_#00000014]
+        className="w-[99px] h-[99px] rounded-full bg-white  absolute 2xl:bottom-[31%] bottom-0  2xl:left-[9%] left-[10%] lg:flex justify-center items-center shadow-[2px_7px_16px_0px_#00000014] md:block hidden
 "
         onClick={() => btn?.current?.slickPrev()}
       >
-        <span>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="42"
-            height="16"
-            viewBox="0 0 42 16"
-            fill="none"
-          >
-            <path
-              d="M0.292892 8.70711C-0.0976295 8.31658 -0.0976295 7.68342 0.292892 7.29289L6.65685 0.928932C7.04738 0.538408 7.68054 0.538408 8.07107 0.928932C8.46159 1.31946 8.46159 1.95262 8.07107 2.34315L2.41422 8L8.07107 13.6569C8.46159 14.0474 8.46159 14.6805 8.07107 15.0711C7.68054 15.4616 7.04738 15.4616 6.65685 15.0711L0.292892 8.70711ZM42 9H1V7H42V9Z"
-              fill="black"
-            />
-          </svg>
-        </span>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="42"
+          height="16"
+          viewBox="0 0 42 16"
+          fill="none"
+        >
+          <path
+            d="M0.292892 8.70711C-0.0976295 8.31658 -0.0976295 7.68342 0.292892 7.29289L6.65685 0.928932C7.04738 0.538408 7.68054 0.538408 8.07107 0.928932C8.46159 1.31946 8.46159 1.95262 8.07107 2.34315L2.41422 8L8.07107 13.6569C8.46159 14.0474 8.46159 14.6805 8.07107 15.0711C7.68054 15.4616 7.04738 15.4616 6.65685 15.0711L0.292892 8.70711ZM42 9H1V7H42V9Z"
+            fill="black"
+          />
+        </svg>
       </button>
       <button
         className="w-[99px] h-[99px] shadow-[2px_7px_16px_0px_#00000014]
- rounded-full bg-white absolute 2xl:bottom-[25%] 2xl:right-[3%] bottom-0 right-[10%] flex justify-center items-center"
+ rounded-full bg-white absolute 2xl:bottom-[31%] 2xl:right-[9%] bottom-0 right-[10%] lg:flex justify-center items-center  md:block hidden"
         onClick={() => btn?.current?.slickNext()}
       >
-        <span>
-          <svg
-            width="42"
-            height="16"
-            viewBox="0 0 42 16"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M41.7071 8.70711C42.0976 8.31658 42.0976 7.68342 41.7071 7.29289L35.3431 0.928932C34.9526 0.538408 34.3195 0.538408 33.9289 0.928932C33.5384 1.31946 33.5384 1.95262 33.9289 2.34315L39.5858 8L33.9289 13.6569C33.5384 14.0474 33.5384 14.6805 33.9289 15.0711C34.3195 15.4616 34.9526 15.4616 35.3431 15.0711L41.7071 8.70711ZM0 9H41V7H0V9Z"
-              fill="black"
-            />
-          </svg>
-        </span>
+        <svg
+          width="42"
+          height="16"
+          viewBox="0 0 42 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M41.7071 8.70711C42.0976 8.31658 42.0976 7.68342 41.7071 7.29289L35.3431 0.928932C34.9526 0.538408 34.3195 0.538408 33.9289 0.928932C33.5384 1.31946 33.5384 1.95262 33.9289 2.34315L39.5858 8L33.9289 13.6569C33.5384 14.0474 33.5384 14.6805 33.9289 15.0711C34.3195 15.4616 34.9526 15.4616 35.3431 15.0711L41.7071 8.70711ZM0 9H41V7H0V9Z"
+            fill="black"
+          />
+        </svg>
       </button>
       <div
         className="max-w-[1320px] mx-auto px-3"

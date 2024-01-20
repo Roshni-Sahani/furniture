@@ -29,7 +29,7 @@ const Backtop = () => {
           display: visible ? "flex " : "none",
         }}
       >
-        <img className="w-[200%]" src={backicon} alt="backtoptop"/>
+        <img className=" max-w-[100px] w-[90px] h-[70px]" src={backicon} alt="backtoptop"/>
       </button>
     </div>
   );

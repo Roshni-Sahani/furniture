@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import sofa1 from "../assests/images/sofa1.webp";
 import sofa2 from "../assests/images/sofa2.webp";
 import sofa3 from "../assests/images/sofa3.webp";
@@ -16,6 +16,7 @@ const productcard = [
   {
     image: sofa3,
   },
+  ,
   {
     image: sofa4,
   },
@@ -27,13 +28,101 @@ const productcard = [
   },
 ];
 const Ourproduct = () => {
+  // const datafilter = productcard.filter((e) => e.id > id);
+  // Step 2: Define a state variable to track the open/closed state of the sidebar
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  const [chamiya, setchamiya] = useState([]);
+  // Step 3: Create a function to toggle the state variable
+  function toggleSidebar(productcard) {
+    setIsSidebarOpen(true);
+    setchamiya([...chamiya, productcard]);
+  }
+  function close() {
+    setIsSidebarOpen(false);
+  }
+  const pankaj = chamiya.map((productcard) => (
+    <div>
+      <div className="p-3 border border-white">
+        <img src={productcard.image} alt="img" className="w-full" />
+        <div className="flex items-center justify-between pt-[19px]">
+          <p className="text-xl font-medium font-poppins">Single Sofa</p>
+          <div className="flex">
+            <svg
+              width="19"
+              height="18"
+              viewBox="0 0 19 18"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M18.3859 6.33831L12.6901 5.51709L10.1439 0.396152C10.0743 0.255944 9.95993 0.142442 9.8186 0.0734507C9.46415 -0.100141 9.03343 0.0445188 8.85621 0.396152L6.31002 5.51709L0.614191 6.33831C0.457157 6.36057 0.313583 6.43401 0.20366 6.54529C0.0707685 6.68079 -0.00246073 6.86309 6.31408e-05 7.05213C0.00258702 7.24117 0.0806575 7.42149 0.21712 7.55345L4.33813 11.5394L3.36452 17.1677C3.34169 17.2987 3.35629 17.4333 3.40668 17.5564C3.45706 17.6795 3.54121 17.7862 3.64958 17.8643C3.75795 17.9424 3.8862 17.9887 4.0198 17.9982C4.1534 18.0077 4.28699 17.9798 4.40543 17.9177L9.50004 15.2605L14.5947 17.9177C14.7337 17.9912 14.8953 18.0157 15.0501 17.989C15.4404 17.9222 15.7029 17.555 15.6356 17.1677L14.662 11.5394L18.783 7.55345C18.8951 7.4444 18.9692 7.30197 18.9916 7.14618C19.0522 6.75671 18.7785 6.39618 18.3859 6.33831Z"
+                fill="#FFD135"
+              />
+            </svg>
+            <svg
+              width="19"
+              height="18"
+              viewBox="0 0 19 18"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M18.3859 6.33831L12.6901 5.51709L10.1439 0.396152C10.0743 0.255944 9.95993 0.142442 9.8186 0.0734507C9.46415 -0.100141 9.03343 0.0445188 8.85621 0.396152L6.31002 5.51709L0.614191 6.33831C0.457157 6.36057 0.313583 6.43401 0.20366 6.54529C0.0707685 6.68079 -0.00246073 6.86309 6.31408e-05 7.05213C0.00258702 7.24117 0.0806575 7.42149 0.21712 7.55345L4.33813 11.5394L3.36452 17.1677C3.34169 17.2987 3.35629 17.4333 3.40668 17.5564C3.45706 17.6795 3.54121 17.7862 3.64958 17.8643C3.75795 17.9424 3.8862 17.9887 4.0198 17.9982C4.1534 18.0077 4.28699 17.9798 4.40543 17.9177L9.50004 15.2605L14.5947 17.9177C14.7337 17.9912 14.8953 18.0157 15.0501 17.989C15.4404 17.9222 15.7029 17.555 15.6356 17.1677L14.662 11.5394L18.783 7.55345C18.8951 7.4444 18.9692 7.30197 18.9916 7.14618C19.0522 6.75671 18.7785 6.39618 18.3859 6.33831Z"
+                fill="#FFD135"
+              />
+            </svg>
+            <svg
+              width="19"
+              height="18"
+              viewBox="0 0 19 18"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M18.3859 6.33831L12.6901 5.51709L10.1439 0.396152C10.0743 0.255944 9.95993 0.142442 9.8186 0.0734507C9.46415 -0.100141 9.03343 0.0445188 8.85621 0.396152L6.31002 5.51709L0.614191 6.33831C0.457157 6.36057 0.313583 6.43401 0.20366 6.54529C0.0707685 6.68079 -0.00246073 6.86309 6.31408e-05 7.05213C0.00258702 7.24117 0.0806575 7.42149 0.21712 7.55345L4.33813 11.5394L3.36452 17.1677C3.34169 17.2987 3.35629 17.4333 3.40668 17.5564C3.45706 17.6795 3.54121 17.7862 3.64958 17.8643C3.75795 17.9424 3.8862 17.9887 4.0198 17.9982C4.1534 18.0077 4.28699 17.9798 4.40543 17.9177L9.50004 15.2605L14.5947 17.9177C14.7337 17.9912 14.8953 18.0157 15.0501 17.989C15.4404 17.9222 15.7029 17.555 15.6356 17.1677L14.662 11.5394L18.783 7.55345C18.8951 7.4444 18.9692 7.30197 18.9916 7.14618C19.0522 6.75671 18.7785 6.39618 18.3859 6.33831Z"
+                fill="#FFD135"
+              />
+            </svg>
+            <svg
+              width="19"
+              height="18"
+              viewBox="0 0 19 18"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M18.3859 6.33831L12.6901 5.51709L10.1439 0.396152C10.0743 0.255944 9.95993 0.142442 9.8186 0.0734507C9.46415 -0.100141 9.03343 0.0445188 8.85621 0.396152L6.31002 5.51709L0.614191 6.33831C0.457157 6.36057 0.313583 6.43401 0.20366 6.54529C0.0707685 6.68079 -0.00246073 6.86309 6.31408e-05 7.05213C0.00258702 7.24117 0.0806575 7.42149 0.21712 7.55345L4.33813 11.5394L3.36452 17.1677C3.34169 17.2987 3.35629 17.4333 3.40668 17.5564C3.45706 17.6795 3.54121 17.7862 3.64958 17.8643C3.75795 17.9424 3.8862 17.9887 4.0198 17.9982C4.1534 18.0077 4.28699 17.9798 4.40543 17.9177L9.50004 15.2605L14.5947 17.9177C14.7337 17.9912 14.8953 18.0157 15.0501 17.989C15.4404 17.9222 15.7029 17.555 15.6356 17.1677L14.662 11.5394L18.783 7.55345C18.8951 7.4444 18.9692 7.30197 18.9916 7.14618C19.0522 6.75671 18.7785 6.39618 18.3859 6.33831Z"
+                fill="#FFD135"
+              />
+            </svg>
+            <svg
+              width="19"
+              height="18"
+              viewBox="0 0 19 18"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M18.3859 6.33831L12.6901 5.51709L10.1439 0.396152C10.0743 0.255944 9.95993 0.142442 9.8186 0.0734507C9.46415 -0.100141 9.03343 0.0445188 8.85621 0.396152L6.31002 5.51709L0.614191 6.33831C0.457157 6.36057 0.313583 6.43401 0.20366 6.54529C0.0707685 6.68079 -0.00246073 6.86309 6.31408e-05 7.05213C0.00258702 7.24117 0.0806575 7.42149 0.21712 7.55345L4.33813 11.5394L3.36452 17.1677C3.34169 17.2987 3.35629 17.4333 3.40668 17.5564C3.45706 17.6795 3.54121 17.7862 3.64958 17.8643C3.75795 17.9424 3.8862 17.9887 4.0198 17.9982C4.1534 18.0077 4.28699 17.9798 4.40543 17.9177L9.50004 15.2605L14.5947 17.9177C14.7337 17.9912 14.8953 18.0157 15.0501 17.989C15.4404 17.9222 15.7029 17.555 15.6356 17.1677L14.662 11.5394L18.783 7.55345C18.8951 7.4444 18.9692 7.30197 18.9916 7.14618C19.0522 6.75671 18.7785 6.39618 18.3859 6.33831Z"
+                fill="#FFD135"
+              />
+            </svg>
+          </div>
+        </div>
+        <p className="font-normal text-lg font-poppins text-[#4d4d4d] pt-4 pb-5">
+          Lorem ipsum dolor{" "}
+        </p>
+        <p className="md:text-[28px] text-[20px] font-poppins font-semibold">
+          ₹ 1200.00
+        </p>
+      </div>
+    </div>
+  ));
   const list = productcard.map((productcard) => (
-    <div
-      className="xl:w-4/12 md:w-1/2 w-full mt-16 px-3"
-    >
+    <div className="xl:w-4/12 md:w-1/2 w-full mt-16 px-3">
       <div className="max-w-[42 2px] px-[24px] py-[19px] bg-white w-full hover:shadow-[6px_13px_38px_0px_#0000001F] duration-500">
         <img src={productcard.image} alt="sofa" className="w-full" />
-        <div className="flex items-center justify-between pt-[19px]" >
+        <div className="flex items-center justify-between pt-[19px]">
           <p className="text-xl font-medium font-poppins">Single Sofa</p>
           <div className="flex">
             <svg
@@ -105,13 +194,24 @@ const Ourproduct = () => {
           <p className="md:text-[28px] text-[20px] font-poppins font-semibold">
             ₹ 1200.00
           </p>
-          <Button text="ADD TO CART" name="!py-2.5 !px-3 !mt-0" />
+          <Button
+            text="ADD TO CART"
+            name="!py-2.5 !px-3 !mt-0"
+            roshni={() => toggleSidebar(productcard)}
+          />
         </div>
       </div>
     </div>
   ));
   return (
     <div className="lg:pt-[135px] lg:pb-[169px] py-10">
+      <div
+        className={`fixed overflow-y-auto p-3 left-0 h-full duration-500 w-full max-w-[500px] z-[40] bg-slate-400 top-0 ${
+          isSidebarOpen ? "left-0" : "left-[-100%]"
+        }`}
+      ><button className="text-4xl font-extrabold text-white font-poppins ml-auto flex justify-end " onClick={close}>x</button>
+        {pankaj}
+      </div>
       <div className="max-w-[1320px] mx-auto px-3">
         <div
           className="sm:flex justify-between items-center "
@@ -129,7 +229,6 @@ const Ourproduct = () => {
               Our Products
             </h2>
           </div>
-
           <div className="flex justify-center sm:justify-normal mt-5 sm:mt-0">
             <Button text="VIEW ALL PRODUCT" name="!mt-0" />
           </div>

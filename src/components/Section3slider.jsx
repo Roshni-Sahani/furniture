@@ -137,6 +137,7 @@ const Section3slider = () => {
     slidesToShow: 3.08,
     variableWidth: true,
     slidesToScroll: 1,
+    autoplay: true,
     responsive: [
       {
         breakpoint: 1500,
@@ -194,7 +195,7 @@ const Section3slider = () => {
   };
   return (
     <div className="bg-[#2D39490A] pt-[70px] pb-[98px] relative overflow-x-clip">
-      <div className="max-w-[741px] max-h-[417px] h-full bg-gradient w-full absolute right-0 top-[47%] lg:top-[-35%]"></div>
+      <div className="lg:max-w-[741px] max-h-[417px] h-full bg-gradient w-full absolute right-0 top-[47%] lg:top-[-35%]"></div>
       <div className="max-w-[1320px] mx-auto px-3">
         <div className="flex flex-wrap flex-row -mx-3">
           <div className="lg:w-5/12 w-full ">
@@ -212,7 +213,7 @@ const Section3slider = () => {
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
                 faucibus, urna at pulvinar porta
               </p>
-              <div className="flex gap-[14px] pt-[39px] justify-center lg:justify-start mb-5">
+              <div className="flex gap-[14px] py-5 justify-center lg:justify-start mb-5">
                 <button
                   className="w-[41px] h-[41px] group duration-500 transition-all rounded-[10px] bg-white flex justify-center items-center hover:bg-[black]"
                   onClick={() => btn?.current?.slickPrev()}

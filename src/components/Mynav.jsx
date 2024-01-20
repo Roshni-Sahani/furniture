@@ -32,6 +32,7 @@ const Mynav = () => {
             <li>
               <Link
                 to="/"
+                onClick={nav}
                 className="text-white relative after:absolute after:w-0 after:h-[3px] after:hover:left-0  after:bg-[#BD7D41] transition-all after:left-[50%] after:duration-700 hover:after:w-full after:bottom-[-12px] font-roboto text-lg font-normal stroke"
               >
                 {" "}
@@ -40,18 +41,23 @@ const Mynav = () => {
             </li>
             <li>
               <Link
+                onClick={nav}
                 to="/about"
-                className="text-white relative after:absolute after:w-0 after:h-[3px] after:hover:left-0  after:bg-[#BD7D41] transition-all after:left-[50%] after:duration-700 hover:after:w-full after:bottom-[-12px] font-roboto text-lg font-bold stroke"
+                className="text-white relative after:absolute after:w-0 after:h-[3px] after:hover:left-0  after:bg-[#BD7D41] transition-all after:left-[50%] after:duration-700 hover:after:w-full after:bottom-[-12px] font-roboto text-lg font-normal stroke"
               >
                 ABOUT US
               </Link>
             </li>
-            <li className="text-white  relative after:absolute after:w-0 after:h-[3px] after:hover:left-0  after:bg-[#BD7D41] transition-all after:left-[50%] after:duration-700 hover:after:w-full after:bottom-[-12px] font-roboto text-lg font-normal stroke">
+            <li
+              onClick={nav}
+              className="text-white  relative after:absolute after:w-0 after:h-[3px] after:hover:left-0  after:bg-[#BD7D41] transition-all after:left-[50%] after:duration-700 hover:after:w-full after:bottom-[-12px] font-roboto text-lg font-normal stroke"
+            >
               SHOP
             </li>
             <li>
               <Link
                 to="/shop"
+                onClick={nav}
                 className="text-white  relative after:absolute after:w-0 after:h-[3px] after:hover:left-0  after:bg-[#BD7D41] transition-all after:left-[50%] after:duration-700 hover:after:w-full after:bottom-[-12px] font-roboto text-lg font-normal stroke"
               >
                 CONTACT US
@@ -109,7 +115,7 @@ const Mynav = () => {
           data-aos-duration="3000"
         >
           <h1
-            className="text-white font-poppins max-w-[908px] lg:text-5xl md:text-4xl text-3xl text-center font-bold py-5"
+            className="text-white font-poppins max-w-[908px] lg:text-5xl md:text-4xl text-3xl text-center font-bold py-5 leading-normal"
             data-aos="zoom-in"
             data-aos-duration="3000"
           >

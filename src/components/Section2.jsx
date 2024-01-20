@@ -3,7 +3,7 @@ import Button from "./Button";
 
 const Section2 = () => {
   return (
-    <div className="pt-[134px] lg:pb-[266px] pb-10 overflow-x-clip">
+    <div className="lg:pt-[134px] lg:pb-[266px] pb-10 overflow-x-clip pt-[100px]">
       <div className="max-w-[1320px] mx-auto px-3 flex-center">
         <div className="flex flex-row flex-wrap -mx-3">
           <div
@@ -44,7 +44,7 @@ const Section2 = () => {
           >
             <div className="flex items-center gap-[11px] mb-[19px] lg:justify-start justify-center mt-5 lg:mt-0">
               <div className="w-[13%] border border-solid border-black"></div>
-              <h3 className=" font-poppins text-xl leading-normal font-normal text-[#BD7D41] ">
+              <h3 className=" font-poppins text-xl leading-normal font-normal text-[#BD7D41]">
                 Welcome Our Story
               </h3>
             </div>

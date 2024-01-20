@@ -3,7 +3,7 @@ import Button from "./Button";
 
 const Woodensec = () => {
   return (
-    <div className="bg-[#F7F7F8] md:pt-[75px]  pt-10 max-sm:pb-10  relative z-10 overflow-x-clip">
+    <div className="bg-[#F7F7F8] md:pt-[75px]  pt-[20px] max-sm:pb-10  relative z-10 overflow-x-clip">
       <div className="container px-3 max-w-[1320px] mx-auto ">
         <div className="flex flex-row flex-wrap -mx-3">
           <div className="lg:w-5/12 w-full px-3 ">

@@ -129,7 +129,7 @@ const Slider3 = () => {
             <div>
               <div>
                 <h3 className=" text-center text-black font-semibold text-lg leading-normal font-poppins">
-                  Treepi Shoty
+                 shreya
                 </h3>
                 <p className=" text-center text-[#4D4D4D] font-poppins text-sm font-light leading-noraml">
                   Teacher
@@ -145,7 +145,7 @@ const Slider3 = () => {
             <div>
               <div>
                 <h3 className=" text-center text-black font-semibold text-lg leading-normal font-poppins">
-                  Treepi Shoty
+                 priyanka
                 </h3>
                 <p className=" text-center text-[#4D4D4D] font-poppins text-sm font-light leading-noraml">
                   Developer
@@ -161,7 +161,7 @@ const Slider3 = () => {
             <div>
               <div>
                 <h3 className=" text-center text-black font-semibold text-lg leading-normal font-poppins">
-                  Treepi Shoty
+                 mohini
                 </h3>
                 <p className=" text-center text-[#4D4D4D] font-poppins text-sm font-light leading-noraml">
                   Professor
@@ -177,7 +177,7 @@ const Slider3 = () => {
             <div>
               <div>
                 <h3 className=" text-center text-black font-semibold text-lg leading-normal font-poppins">
-                  Treepi Shoty
+                 pooja
                 </h3>
                 <p className=" text-center text-[#4D4D4D] font-poppins text-sm font-light leading-noraml">
                   Teacher
@@ -193,7 +193,7 @@ const Slider3 = () => {
             <div>
               <div>
                 <h3 className=" text-center text-black font-semibold text-lg leading-normal font-poppins">
-                  Treepi Shoty
+                 gopal
                 </h3>
                 <p className=" text-center text-[#4D4D4D] font-poppins text-sm font-light leading-noraml">
                   Developer
@@ -209,7 +209,7 @@ const Slider3 = () => {
             <div>
               <div>
                 <h3 className=" text-center text-black font-semibold text-lg leading-normal font-poppins">
-                  Treepi Shoty
+                  pankaj
                 </h3>
                 <p className=" text-center text-[#4D4D4D] font-poppins text-sm font-light leading-noraml">
                   Professor
@@ -225,7 +225,7 @@ const Slider3 = () => {
             <div>
               <div>
                 <h3 className=" text-center text-black font-semibold text-lg leading-normal font-poppins">
-                  Treepi Shoty
+                deepak
                 </h3>
                 <p className=" text-center text-[#4D4D4D] font-poppins text-sm font-light leading-noraml">
                   Developer
@@ -241,7 +241,7 @@ const Slider3 = () => {
             <div>
               <div>
                 <h3 className=" text-center text-black font-semibold text-lg leading-normal font-poppins">
-                  Treepi Shoty
+                Roshni sahani
                 </h3>
                 <p className=" text-center text-[#4D4D4D] font-poppins text-sm font-light leading-noraml">
                   Developer
